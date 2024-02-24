@@ -202,7 +202,13 @@ def main():
             playmusic = driver.find_element(By.XPATH, playmusic_xpath)
             playmusic.click()
 
-            time.sleep(1)
+            time.sleep(2)
+
+            likebutton_xpath = "(/html/body/div[4]/div/div[2]/div[3]/div[1]/div[2]/div[2]/div/div/div[2]/main/div[1]/section/div[2]/div[2]/div[4]/div/div/div/div/button[1]/span)[3]"
+            likebutton = driver.find_element(By.XPATH, likebutton_xpath)
+            likebutton.click()
+
+            time.sleep(2)
 
             print(Colors.green, "Username: {} - Listening process has started.".format(username))
 
